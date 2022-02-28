@@ -1,0 +1,12 @@
+version: "3.9"  
+services:
+  dots:
+    restart: always
+    build: ./dots/.
+    ports:
+      - "8000:8000"  
+    volumes:
+      - data:/app/
+volumes:
+  data:
+    external: true
