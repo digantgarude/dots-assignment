@@ -2,7 +2,6 @@
 
 ## Installation
 
-
 ### Using docker
 (Make sure the docker-compose file exists or cd into the appropriate directory.)
 
@@ -35,8 +34,6 @@ conda activate dots
 pip install -r requirements.txt
 ```
 
-
-
 ```bash
 python manage.py makemigrations
 python manage.py migrate
@@ -47,6 +44,27 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+---
+
+### To test the API Calls (Optional):
+
+> Import the `Dots_Assignment.har` file into Insomnia or Postman or other compatible client.
+
+---
+
+### Main File Structure:
+
+> `dots/player_apis/views.py` -> All the views and functions.
+
+> `dots/player_apis/urls.py` -> All routing info is managed here.
+
+> `dots/dots/urls.py` -> Main `/api` route is defined here.
+
+> `dots/player_apis/models.py` -> Models used are defined here.
+
+> `dots/Dockerfile` -> Docker File
+
+> `docker-compose.yml` -> Docker Compose
 
 ---
 
